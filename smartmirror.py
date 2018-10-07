@@ -340,10 +340,10 @@ class FullscreenWindow:
 		self.bottomFrame.pack(side = BOTTOM, fill=BOTH, expand = YES)
 		self.state = False
 
-	self.tk.overrideredirect(True)
-	self.tk.geometry("{0}x{1}+0+0".format(self.tk.winfo_screenwidth(), self.tk.winfo_screenheight()))
-	self.tk.focus_set()
-	self.tk.bind("<Escape>", lambda e: e.widget.quit())
+		self.tk.overrideredirect(True)
+		self.tk.geometry("{0}x{1}+0+0".format(self.tk.winfo_screenwidth(), self.tk.winfo_screenheight()))
+		self.tk.focus_set()
+		self.tk.bind("<Escape>", lambda e: e.widget.quit())
 
 		# clock
 		self.clock = Clock(self.topFrame)
