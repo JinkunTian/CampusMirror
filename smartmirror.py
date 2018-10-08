@@ -299,9 +299,9 @@ class News(Frame):
 
 		#extract curriculum which on today and tomorrow
 		for x in xrange(0,kcb_len):
-			if (int(school_schedule[x]['kcsj'])>(int(schedule_week)*10000))and(int(school_schedule[x]['kcsj'])<((int(schedule_week)+1)*10000)):
+			if (int(school_schedule[x]['kcsj'][0:1])==(int(schedule_week))):
 				Today_class.append(school_schedule[x])
-			if (int(school_schedule[x]['kcsj'])>((int(schedule_week)+1)*10000))and(int(school_schedule[x]['kcsj'])<((int(schedule_week)+2)*10000)):
+			if (int(school_schedule[x]['kcsj'][0:1])==((int(schedule_week)+1))):
 				Tomorrow_class.append(school_schedule[x])
 		if len(Today_class)>0:
 			schedule_text="Today\n"
