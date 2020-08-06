@@ -1,4 +1,4 @@
-# smart-mirror-qiangzhi
+# CampusMirror
 #可以查询课表的智能镜子
 项目基于[https://github.com/HackerHouseYT/Smart-Mirror](https://github.com/HackerHouseYT/Smart-Mirror)开发，在原项目的基础上保留天气查询功能，删去了新闻功能，添加学生时代最实用的查课表功能。
 
